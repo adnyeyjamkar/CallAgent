@@ -1,0 +1,383 @@
+# Training data for the on-device intent classifier.
+#
+# Format:  "## intent_name" starts a block, every following non-empty line is
+# one example utterance for that intent. Lines starting with "#" (single) are comments.
+#
+# Utterances are written the way the speech recogniser outputs them:
+# lower-case, no punctuation. Add your own lines and rebuild - the model is
+# re-trained on the phone at app start (takes well under a second).
+
+## greeting
+hello
+hello hello
+hi
+hi there
+hey
+hello can you hear me
+hello is anyone there
+good morning
+good afternoon
+good evening
+hello good morning
+hi good evening
+namaste
+hello sir
+hello madam
+hey there
+hello am i audible
+hi hello
+yes hello
+hello hi
+
+## ask_for_owner
+can i speak to him
+can i talk to him
+may i speak with him please
+is he there
+is he available
+is he around
+i want to talk to him
+i need to speak to him directly
+please give him the phone
+can you put him on the line
+please connect me to him
+can you transfer the call to him
+is he free to talk
+i would like to speak with the owner of this phone
+can i speak to the person whose number this is
+is she there
+can i talk to her
+give the phone to him
+i want to talk to him not you
+let me talk to a real person
+can you pass the phone to him
+is sir available
+is he at home
+when will he be available
+when will he be free
+when can i reach him
+what time will he be back
+when should i call again
+is he busy right now
+where is he
+
+## leave_message
+i want to leave a message
+can i leave a message
+please take a message
+can you take a message for him
+please tell him that i called
+tell him i called
+just tell him i called
+please inform him that i called
+please let him know i called
+pass on a message to him
+please give him a message
+can you tell him something
+i would like to leave a message for him
+kindly convey a message to him
+please note down a message
+tell him that i rang
+let him know that i tried to reach him
+could you pass this on to him
+convey my message to him
+i have a message for him
+
+## callback_request
+ask him to call me back
+please ask him to call me back
+tell him to call me back
+can he call me back
+please call me back
+tell him to give me a call
+ask him to ring me back
+i want him to call me back as soon as he is free
+please ask him to return my call
+tell him to call back on this number
+call me back when you are free
+ask him to call me when he gets time
+i need a call back
+request a call back
+tell him to call me in the evening
+he should call me back today
+have him call me
+please tell him to phone me back
+i will wait for his call
+let him call me back later
+
+## urgent
+it is urgent
+this is urgent
+it is very urgent
+this is an emergency
+it is an emergency
+i need to talk to him immediately
+it is really important
+this is very important
+please it is urgent
+it cannot wait
+i need him right now
+there is an emergency at home
+urgent matter
+it is extremely urgent please
+tell him it is urgent
+this is a serious matter
+i need help immediately
+as soon as possible please it is important
+it is a matter of emergency
+very urgent call
+
+## who_are_you
+who is this
+who are you
+who am i speaking to
+who am i talking to
+am i talking to a robot
+are you a robot
+are you a real person
+is this a machine
+are you a human
+is this an automated system
+is this a recording
+are you an a i
+what are you
+is this a bot
+am i speaking with a computer
+who is speaking
+what is this
+is this an answering machine
+are you his assistant
+are you a voice assistant
+
+## sales_spam
+i am calling about a credit card offer
+we have a special offer on personal loan
+you have been pre approved for a loan
+we are offering a free credit card
+this call is regarding your car insurance renewal
+do you need a home loan
+we have a great offer on health insurance
+congratulations you have won a lottery
+you have won a prize
+your bank account will be blocked please share your o t p
+i am calling from the bank regarding your k y c update
+your k y c is pending please verify
+we are offering lifetime free credit card
+are you interested in investing in mutual funds
+we have a new broadband plan for you
+would you like to upgrade your sim to a postpaid plan
+this is a promotional call
+i am calling regarding a property investment opportunity
+you are eligible for a loan of five lakh rupees
+special discount offer only for today
+we provide the best trading tips
+your electricity connection will be disconnected tonight
+please share the o t p sent to your number
+we are calling from customer care regarding your reward points
+limited time offer on insurance policy
+you can earn money working from home
+we are selling plots at a low price
+are you looking for a personal loan
+this is regarding your credit card limit increase
+press one to know more about this offer
+
+## delivery
+i am the delivery boy
+i have a parcel for you
+your courier has arrived
+your order is here
+i am at your gate with the delivery
+i am outside with your package
+your food order is here
+i have come to deliver your parcel
+delivery for you sir
+courier delivery please come down
+i am standing outside your house with the order
+where should i leave the package
+your amazon parcel is here
+your swiggy order has arrived
+i am from the courier company
+your package is out for delivery
+please collect your order
+i am downstairs with your delivery
+i cannot find your address for the delivery
+the parcel needs a signature
+zomato delivery i am at the location
+please share the delivery o t p for the parcel
+your order has reached
+
+## inform
+i wanted to discuss the project with him
+i am calling about the meeting tomorrow
+it is regarding the report he sent yesterday
+i wanted to ask about the documents
+i am calling regarding the interview schedule
+we have a meeting at five and i wanted to confirm
+this is about the payment for last month
+i wanted to check if he is coming to the office today
+i am his friend from college just wanted to catch up
+i called to wish him happy birthday
+i wanted to invite him for dinner on sunday
+his appointment with the doctor is confirmed for monday
+the car service is done he can pick it up
+i am calling from the school about his son
+the plumber will come tomorrow morning
+i need the files for the presentation
+we are waiting for him at the venue
+i wanted to know the status of the work
+the meeting has been postponed to next week
+i am calling about the house rent
+his cheque is ready for collection
+i just wanted to say hello to him
+please tell him the tickets are booked
+i wanted to talk about the trip next month
+the laptop repair is complete
+his mother asked me to call him
+i am a colleague and need some information about the client
+the invoice has been sent to his email
+we need his signature on some papers
+i am calling to confirm the booking
+
+## give_name
+my name is rahul
+this is priya
+i am amit
+this is sharma speaking
+my name is anjali verma
+i am suresh from the office
+this is doctor mehta
+rohan here
+neha this side
+it is vikram
+myself rajesh
+i am his brother
+this is his mother
+i am his friend sanjay
+my name is john
+this is david calling
+i am kavita
+you can tell him it is arjun
+tell him pooja called
+this is his manager
+
+## affirm
+yes
+yes please
+yeah
+yep
+sure
+okay
+ok
+correct
+that is right
+right
+yes that is correct
+of course
+absolutely
+yes go ahead
+please do
+yes i do
+definitely
+haan
+yes yes
+that would be great
+
+## deny
+no
+no thanks
+no thank you
+nope
+nothing else
+no that is all
+that is all
+that is it
+nothing more
+not really
+no need
+no i do not
+nahi
+no no
+never mind
+nothing
+no that will be all
+i am done
+no it is fine
+not now
+
+## repeat
+can you repeat that
+please repeat
+say that again
+sorry what did you say
+pardon
+i did not get that
+i could not hear you
+come again
+what did you say
+sorry i did not understand
+could you say that once more
+repeat please
+i beg your pardon
+what was that
+can you speak again
+i missed that
+sorry can you repeat
+once again please
+could you repeat that
+i did not catch that
+
+## thanks
+thank you
+thanks
+thank you so much
+thanks a lot
+thank you very much
+many thanks
+thanks for your help
+okay thank you
+alright thanks
+thank you that is helpful
+i appreciate it
+thanks so much
+great thank you
+dhanyavaad
+thank you for the information
+
+## goodbye
+bye
+goodbye
+bye bye
+okay bye
+see you
+talk to you later
+i will call later
+i will call back later
+i will try again later
+okay i will call him later
+have a nice day
+good night
+take care
+i will call again
+okay then bye
+i will hang up now
+that is all bye
+alright bye bye
+catch you later
+i will ring him later
+
+## wrong_number
+sorry wrong number
+i think i dialed the wrong number
+wrong number
+i have the wrong number
+sorry i called the wrong person
+i dialed by mistake
+this is not the number i wanted
+oh sorry wrong number
+i think i got the wrong number
+called by mistake sorry
+is this not the pizza shop
+sorry i was trying to reach someone else
+i must have misdialed
+this call was a mistake
+sorry i pressed the wrong contact

@@ -1,0 +1,3 @@
+/build
+# Speech model is downloaded at build time (see build.gradle.kts)
+/src/main/assets/model-en-in/

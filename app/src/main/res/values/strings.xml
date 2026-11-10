@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name" translatable="false">CallAgent</string>
+    <string name="default_owner_name" translatable="false">Adnyey Jamkar</string>
+    <string name="accessibility_service_description">CallAgent uses Accessibility access to answer incoming calls for you and to hear the caller while a call is in progress. All audio is processed on this device and never leaves it.</string>
+
+    <string name="title">Offline Call Agent</string>
+    <string name="subtitle">Answers your calls on-device. No internet, no cloud.</string>
+    <string name="auto_answer">Auto-answer incoming calls</string>
+    <string name="owner_hint">Your name (spoken to callers)</string>
+    <string name="save">Save</string>
+    <string name="saved">Saved</string>
+    <string name="step_permissions">1. Grant permissions</string>
+    <string name="step_accessibility">2. Enable accessibility service</string>
+    <string name="step_dialer">Optional: set as default phone app</string>
+    <string name="test_start">Test agent with microphone</string>
+    <string name="test_stop">Stop test</string>
+    <string name="log_title">Calls handled</string>
+    <string name="clear">Clear</string>
+    <string name="no_calls">No calls handled yet.</string>
+    <string name="permission_denied">Without these permissions the agent cannot answer calls.</string>
+    <string name="busy">The agent is busy with another conversation.</string>
+    <string name="dialer_already">CallAgent is already the default phone app.</string>
+    <string name="dialer_unsupported">Needs Android 10 or newer.</string>
+</resources>
